@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ResourceBundleManager">
+    <file url="file://$PROJECT_DIR$/src/main/resources/MainWindow.properties" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/MainWindow_DE.properties" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/MainWindow_ES.properties" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/MainWindow_EST.properties" />
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/src/main/resources/MainWindow.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/resources/MainWindow_DE.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/resources/MainWindow_ES.properties" />
+      <file value="file://$PROJECT_DIR$/src/main/resources/MainWindow_EST.properties" />
+      <base-name>MainWindow</base-name>
+    </custom-resource-bundle>
+  </component>
+</project>

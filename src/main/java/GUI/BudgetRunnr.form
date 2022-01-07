@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.BudgetRunnr">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1024" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="9ade9" binding="panelGeneralInfo" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="b6691" class="javax.swing.JLabel" binding="lblAmountAvailable">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="MainWindow" key="lblAmountAvailable"/>
+              <toolTipText value="Shows the currently available amount."/>
+            </properties>
+          </component>
+          <component id="9a68e" class="javax.swing.JLabel" binding="lblAccount">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="MainWindow" key="txtAccount"/>
+              <toolTipText resource-bundle="MainWindow" key="txtAccount.tooltip"/>
+            </properties>
+          </component>
+          <hspacer id="6bbae">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="630d4" class="javax.swing.JComboBox" binding="spinAccountSelect">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="Standard"/>
+              </model>
+              <toolTipText resource-bundle="MainWindow" key="txtAccount.tooltip"/>
+            </properties>
+          </component>
+          <component id="88dd6" class="javax.swing.JLabel" binding="lblAvailable">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="0"/>
+              <toolTipText resource-bundle="MainWindow" key="lblAmountAvailable.Tooltip"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="94738" binding="panelTransactionOperations" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="fdd00" class="javax.swing.JButton" binding="btnIncome">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="MainWindow" key="addIncome"/>
+              <toolTipText resource-bundle="MainWindow" key="addIncome.tooltip"/>
+            </properties>
+          </component>
+          <component id="78246" class="javax.swing.JButton" binding="btnExpense">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="MainWindow" key="addExpense"/>
+              <toolTipText resource-bundle="MainWindow" key="addExpense.tooltip"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="ab863" binding="panelTblLastTransactions" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="7d914" binding="scrollTblLastTransactions">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="4de29" class="javax.swing.JTable" binding="tblLastTransactions">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="13ec9" binding="panelTransactionSearch" layout-manager="GridLayoutManager" row-count="1" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="f3644" class="javax.swing.JLabel" binding="lblSearchTransactions">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="MainWindow" key="search"/>
+              <toolTipText resource-bundle="MainWindow" key="search.tooltip"/>
+            </properties>
+          </component>
+          <component id="e4dd9" class="javax.swing.JComboBox" binding="comboSearchTransactionType">
+            <constraints>
+              <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="All"/>
+                <item value="Income"/>
+                <item value="Expense"/>
+              </model>
+              <toolTipText value="Choose if you want to show all types of transactions or only one specific type."/>
+            </properties>
+          </component>
+          <component id="7956a" class="com.github.lgooddatepicker.components.DatePicker" binding="datePickerSearch">
+            <constraints>
+              <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <toolTipText resource-bundle="MainWindow" key="datePicker.tooltip"/>
+            </properties>
+          </component>
+          <component id="8def5" class="javax.swing.JCheckBox" binding="chkDate">
+            <constraints>
+              <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="MainWindow" key="chkDateSearch"/>
+              <toolTipText resource-bundle="MainWindow" key="chkDateSearch.tooltip"/>
+            </properties>
+          </component>
+          <component id="97584" class="javax.swing.JFormattedTextField" binding="txtValueSearch">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="75" height="-1"/>
+                <preferred-size width="100" height="-1"/>
+                <maximum-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <columns value="0"/>
+              <enabled value="false"/>
+              <toolTipText resource-bundle="MainWindow" key="txtValueSearch.Tooltip"/>
+            </properties>
+          </component>
+          <hspacer id="c8cdc">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="ac7b4" class="javax.swing.JCheckBox" binding="chkValue">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="MainWindow" key="ckhValueSearch"/>
+              <toolTipText resource-bundle="MainWindow" key="chkValueSearch.Tooltip"/>
+            </properties>
+          </component>
+          <component id="279ef" class="javax.swing.JButton" binding="btnStartSearch">
+            <constraints>
+              <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="MainWindow" key="btnSearch"/>
+              <toolTipText resource-bundle="MainWindow" key="btnSearch.tooltip"/>
+            </properties>
+          </component>
+          <component id="a027c" class="javax.swing.JCheckBox" binding="chkCause">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="MainWindow" key="chkCause"/>
+              <toolTipText resource-bundle="MainWindow" key="chkCause.Tooltip"/>
+            </properties>
+          </component>
+          <component id="fdd40" class="javax.swing.JFormattedTextField" binding="txtCause">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <toolTipText resource-bundle="MainWindow" key="chkCause.Tooltip"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
